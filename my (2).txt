@@ -1,0 +1,20 @@
+<Container>:
+    orientation: 'vertical'
+
+
+    text_input: text_input
+    text_output: text_output
+
+    <PageLayout>:
+        <Button>:
+            text:1
+        <Button>:
+            text:2
+        <Button>:
+            text:3
+        id: text_input
+        multiline: False
+
+    <BoxLayout>:
+        id: text_output
+        text: 'Тут будет ответ!'

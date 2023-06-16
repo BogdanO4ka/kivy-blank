@@ -1,0 +1,51 @@
+<Container>:
+    orientation:"horizontal"
+    BoxLayout:
+        orientation:"vertical"
+    #общ конт
+
+
+
+        #шапка
+        BoxLayout:
+            padding: 25
+            spacing: 30
+
+            Button:
+                pos_hint: {'x': 1, 'top':1}
+                size_hint: 0.2, 0.3
+                text:"cumburger"
+
+            Button:
+                pos_hint: {'right':1, 'top':1}
+                size_hint: 0.2, 0.3
+                text:"logo"
+        #статистика
+        BoxLayout:
+            pos_hint: {'center_x':1, 'top':1}
+            Label:
+                pos_hint:
+                text:"Статистика"
+        BoxLayout:
+            Label:
+                text:"Баланс"
+        BoxLayout:
+            Label:
+                text:"Заработал"
+        BoxLayout:
+            Label:
+                text:"Потратил"
+        #нижняя строка
+        BoxLayout:
+            padding: 35
+            spacing: 35
+
+            Button:
+                pos_hint:{'x':1, 'center_y':1}
+                size_hint: 0.3, 0.5
+                text: "+P"
+
+            Button:
+                pos_hint:{'right':1, 'center_y':1}
+                size_hint: 0.3, 0.5
+                text: "-P"
